@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card when the faceDown prop is false should display the card image 1`] = `
+<div
+  className="Card"
+  onClick={[Function]}
+>
+  <div
+    className="Card__container Card__container--portrait"
+  >
+    <div
+      className="Card__image"
+      style={
+        Object {
+          "backgroundImage": "url(https://deckofcardsapi.com/static/img/JS.png)",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Card when the faceDown prop is true and the orientation is landscape should display the face down card image in the landscape orientation 1`] = `
+<div
+  className="Card"
+  onClick={[Function]}
+>
+  <div
+    className="Card__container Card__container--landscape"
+  >
+    <div
+      className="Card__image"
+      style={
+        Object {
+          "backgroundImage": "url(facedown-landscape.png)",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Card when the faceDown prop is true and the orientation is not provided should display the face down card image in the portrait orientation 1`] = `
+<div
+  className="Card"
+  onClick={[Function]}
+>
+  <div
+    className="Card__container Card__container--portrait"
+  >
+    <div
+      className="Card__image"
+      style={
+        Object {
+          "backgroundImage": "url(facedown-portrait.png)",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Card when the faceDown prop is true and the orientation is portrait should display the face down card image in the portrait orientation 1`] = `
+<div
+  className="Card"
+  onClick={[Function]}
+>
+  <div
+    className="Card__container Card__container--portrait"
+  >
+    <div
+      className="Card__image"
+      style={
+        Object {
+          "backgroundImage": "url(facedown-portrait.png)",
+        }
+      }
+    />
+  </div>
+</div>
+`;

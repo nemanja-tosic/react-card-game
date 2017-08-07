@@ -1,0 +1,206 @@
+@import './variables';
+
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
+
+$avatar-height: 50px;
+$avatar-width: 50px;
+
+// When the orientation is portrait, the height is important as we are aligning next to the avatar,
+// and we want the avatar to be slightly bigger.
+$taken-card-height-portrait: $avatar-height - 6px;
+$taken-card-width-portrait: card-width($taken-card-height-portrait);
+
+// When the orientation is landscape, the width is important as we are aligning above/below the
+// avatar, and we want the avatar to be slightly bigger.
+$taken-card-width-landscape: $avatar-width - 6px;
+$taken-card-height-landscape: card-height($taken-card-width-landscape);
+
+// We have a lot of modifications based on the player slot, so in order to adhere to BEM, its best
+// to extract the module name
+$module: 'Player';
+
+.#{$module} {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &--0 {
+    flex-direction: column-reverse;
+
+    .#{$module}__taken-cards {
+      // align to the left of the avatar
+      right: calc(50% + #{$avatar-width / 2} + #{$taken-card-width-portrait} + 5px);
+      top: ($avatar-height - $taken-card-height-portrait) / 2;
+    }
+
+    @for $i from 1 to $max-won-rounds + 1 {
+      // stack every group to the left
+      .#{$module}__taken-cards-group:nth-child(#{$i}) {
+        left: -($i - 1) * 5px;
+      }
+    }
+  }
+
+  &--1 {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .#{$module}__taken-cards {
+      // align above the player info
+      top: calc(-1 * #{$taken-card-height-landscape} - 5px);
+      left: calc(50% - #{$taken-card-width-landscape / 2});
+    }
+
+    @for $i from 1 to $max-won-rounds + 1 {
+      // stack every group above each other
+      .#{$module}__taken-cards-group:nth-child(#{$i}) {
+        top: -($i - 1) * 5px;
+      }
+    }
+  }
+
+  &--2 {
+    flex-direction: column;
+
+    .#{$module}__taken-cards {
+      // align to the right of the avatar
+      left: calc(50% + #{$avatar-width / 2} + 5px);
+      top: ($avatar-height - $taken-card-height-portrait) / 2;
+    }
+
+    @for $i from 1 to $max-won-rounds + 1 {
+      // stack every group to the right
+      .#{$module}__taken-cards-group:nth-child(#{$i}) {
+        left: ($i - 1) * 5px;
+      }
+    }
+  }
+
+  &--3 {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+    .#{$module}__taken-cards {
+      // align below the player info
+      top: calc(100% + 5px);
+      left: calc(50% - #{$taken-card-width-landscape / 2});
+    }
+
+    @for $i from 1 to $max-won-rounds + 1 {
+      // stack every group below each other
+      .#{$module}__taken-cards-group:nth-child(#{$i}) {
+        top: ($i - 1) * 5px;
+      }
+    }
+  }
+
+  &--0, &--2 {
+    .#{$module}__hand {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .#{$module}__hand__card {
+      width: 20%;
+      margin-left: -11%; /* make the cards overlap: 10 cards * 20% = 200% - 99% */
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .#{$module}__taken-cards-group {
+      width: $taken-card-width-portrait;
+    }
+  }
+
+  &--1, &--3 {
+    .#{$module}__hand {
+      width: 100%;
+      max-width: 140px; // the height of the card when the max width is achieved
+      flex-direction: column;
+    }
+
+    .#{$module}__hand__card {
+      margin-top: -50%; /* make the cards overlap */
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .#{$module}__taken-cards-group {
+      width: $taken-card-width-landscape;
+    }
+  }
+
+  &--1, &--2, &--3 {
+    @include media-breakpoint-down($compact-view-breakpoint) {
+      .#{$module}__hand {
+        position: absolute;
+        width: 0;
+        left: 50%;
+        top: 50%;
+      }
+    }
+  }
+
+  &__info {
+    margin: 0.2rem;
+    position: relative;
+    text-align: center;
+  }
+
+  &__hand {
+    display: flex; /* Align cards to center */
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    margin-top: 0.2rem;
+
+    @include media-breakpoint-down($compact-view-breakpoint) {
+      font-size: 0.7rem;
+    }
+
+    &--active {
+      background: white;
+      color: black;
+      border: 1px solid black;
+      border-radius: 12px;
+    }
+
+    &--inactive {
+      border: 1px solid transparent;
+    }
+  }
+
+  &__avatar {
+    width: $avatar-height;
+    height: $avatar-height;
+    margin: 0 auto;
+
+    @for $i from 0 to 4 {
+      &--#{$i} {
+        background: url('./assets/face-#{$i}.svg') no-repeat center center;
+      }
+    }
+  }
+
+  &__taken-cards-group {
+    position: absolute; /* need to stack to indicate a won hand */
+  }
+
+  &__taken-cards {
+    position: absolute;
+
+    .Card {
+      position: absolute; /* want them to stack onto each other */
+      width: 100%;
+    }
+  }
+}

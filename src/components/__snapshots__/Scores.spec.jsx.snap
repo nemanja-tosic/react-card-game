@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scores when there are multiple winners should highlight all the winners 1`] = `
+<div
+  className="Scores container-fluid"
+>
+  <div
+    className="row align-items-center justify-content-center"
+  >
+    <div
+      className="col-md-6 col-lg-4"
+    >
+      <div
+        className="Scores__score Scores__score--winner"
+      >
+        <div
+          className="Scores__name"
+        >
+          John
+           
+           won!!!
+        </div>
+        <div
+          className="Scores__total"
+        />
+      </div>
+      <div
+        className="Scores__score Scores__score--winner"
+      >
+        <div
+          className="Scores__name"
+        >
+          HAL
+           
+           won!!!
+        </div>
+        <div
+          className="Scores__total"
+        />
+      </div>
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Back to the menu
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Scores when there is a single winner should indicate the winner 1`] = `
+<div
+  className="Scores container-fluid"
+>
+  <div
+    className="row align-items-center justify-content-center"
+  >
+    <div
+      className="col-md-6 col-lg-4"
+    >
+      <div
+        className="Scores__score Scores__score--winner"
+      >
+        <div
+          className="Scores__name"
+        >
+          John
+           
+           won!!!
+        </div>
+        <div
+          className="Scores__total"
+        />
+      </div>
+      <div
+        className="Scores__score"
+      >
+        <div
+          className="Scores__name"
+        >
+          HAL
+           
+        </div>
+        <div
+          className="Scores__total"
+        />
+      </div>
+      <button
+        className="btn btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Back to the menu
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,28 @@
+@import './variables';
+
+.Card {
+  transform-origin: 0 0; // needed for FLIP animations
+}
+
+.Card__container {
+  width: 100%;
+  position: relative;
+}
+
+.Card__container--portrait {
+  padding-top: 1 / $card-portrait-ratio * 100%;
+}
+
+.Card__container--landscape {
+  padding-top: $card-portrait-ratio * 100%;
+}
+
+.Card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: no-repeat center center;
+  background-size: contain;
+}

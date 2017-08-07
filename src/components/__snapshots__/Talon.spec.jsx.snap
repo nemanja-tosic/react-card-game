@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Talon should display all the provided cards 1`] = `
+<div
+  className="Talon"
+>
+  <div
+    className="Talon__card"
+  >
+    <CardComponent
+      card={
+        Card {
+          "code": "JS",
+          "imageUrl": "https://deckofcardsapi.com/static/img/JS.png",
+        }
+      }
+      cardRef={[Function]}
+    />
+  </div>
+</div>
+`;

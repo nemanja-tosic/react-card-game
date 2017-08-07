@@ -1,0 +1,771 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerComponent should be marked as active when active 1`] = `
+<div
+  className="Player Player--0"
+>
+  <div
+    className="Player__info"
+  >
+    <div
+      className="Player__avatar Player__avatar--0"
+    />
+    <div
+      className="Player__name Player__name--active"
+    >
+      John
+    </div>
+    <div
+      className="Player__taken-cards"
+    >
+      
+    </div>
+  </div>
+  <div
+    className="Player__hand"
+  >
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "0C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "2C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "3C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "4C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "5C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PlayerComponent should be marked as inactive when inactive 1`] = `
+<div
+  className="Player Player--0"
+>
+  <div
+    className="Player__info"
+  >
+    <div
+      className="Player__avatar Player__avatar--0"
+    />
+    <div
+      className="Player__name Player__name--inactive"
+    >
+      John
+    </div>
+    <div
+      className="Player__taken-cards"
+    >
+      
+    </div>
+  </div>
+  <div
+    className="Player__hand"
+  >
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "0C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "2C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "3C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "4C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "5C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PlayerComponent should display all the taken cards 1`] = `
+<div
+  className="Player Player--0"
+>
+  <div
+    className="Player__info"
+  >
+    <div
+      className="Player__avatar Player__avatar--0"
+    />
+    <div
+      className="Player__name Player__name--active"
+    >
+      John
+    </div>
+    <div
+      className="Player__taken-cards"
+    >
+      <div
+        className="Player__taken-cards-group"
+      >
+        <CardComponent
+          card={
+            Card {
+              "code": "JS",
+              "imageUrl": "https://deckofcardsapi.com/static/img/JS.png",
+            }
+          }
+          cardRef={[Function]}
+          faceDown={true}
+          orientation="portrait"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="Player__hand"
+  >
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "0C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "2C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "3C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "4C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "5C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PlayerComponent should have the cards in the landscape orientation when slot is 1 1`] = `
+<div
+  className="Player Player--1"
+>
+  <div
+    className="Player__info"
+  >
+    <div
+      className="Player__avatar Player__avatar--1"
+    />
+    <div
+      className="Player__name Player__name--active"
+    >
+      John
+    </div>
+    <div
+      className="Player__taken-cards"
+    >
+      
+    </div>
+  </div>
+  <div
+    className="Player__hand"
+  >
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "0C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "2C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "3C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "4C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "5C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PlayerComponent should have the cards in the landscape orientation when slot is 3 1`] = `
+<div
+  className="Player Player--3"
+>
+  <div
+    className="Player__info"
+  >
+    <div
+      className="Player__avatar Player__avatar--3"
+    />
+    <div
+      className="Player__name Player__name--active"
+    >
+      John
+    </div>
+    <div
+      className="Player__taken-cards"
+    >
+      
+    </div>
+  </div>
+  <div
+    className="Player__hand"
+  >
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "0C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "2C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "3C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "4C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "5C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="landscape"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PlayerComponent should have the cards in the portrait orientation when slot is 0 1`] = `
+<div
+  className="Player Player--0"
+>
+  <div
+    className="Player__info"
+  >
+    <div
+      className="Player__avatar Player__avatar--0"
+    />
+    <div
+      className="Player__name Player__name--active"
+    >
+      John
+    </div>
+    <div
+      className="Player__taken-cards"
+    >
+      
+    </div>
+  </div>
+  <div
+    className="Player__hand"
+  >
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "0C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "2C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "3C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "4C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "5C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PlayerComponent should have the cards in the portrait orientation when slot is 2 1`] = `
+<div
+  className="Player Player--2"
+>
+  <div
+    className="Player__info"
+  >
+    <div
+      className="Player__avatar Player__avatar--2"
+    />
+    <div
+      className="Player__name Player__name--active"
+    >
+      John
+    </div>
+    <div
+      className="Player__taken-cards"
+    >
+      
+    </div>
+  </div>
+  <div
+    className="Player__hand"
+  >
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "0C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "2C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "3C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "4C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+    <div
+      className="Player__hand__card"
+    >
+      <CardComponent
+        card={
+          Card {
+            "code": "5C",
+            "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+          }
+        }
+        cardRef={[Function]}
+        faceDown={false}
+        onClick={[Function]}
+        orientation="portrait"
+      />
+    </div>
+  </div>
+</div>
+`;

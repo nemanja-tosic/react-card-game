@@ -1,0 +1,26 @@
+.Scores {
+  height: 100%;
+}
+
+.Scores, .Scores > .row {
+  height: 100%;
+}
+
+.Scores__name {
+  flex: 1;
+}
+
+.Scores__score {
+  margin-bottom: 1rem;
+  padding: 0.7rem 0;
+  display: flex;
+}
+
+.Scores__score--winner {
+  font-weight: bold;
+  color: gold;
+}
+
+.Scores__score:last-child {
+  margin-bottom: 0;
+}

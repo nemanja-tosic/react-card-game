@@ -1,0 +1,45 @@
+@import './variables';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
+
+.Game {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "west north north east" "west talon talon east" "west south south east";
+  height: 100%;
+
+  @include media-breakpoint-down($compact-view-breakpoint) {
+    // Give more space to the player in order to show all cards and be able to click on them.
+    grid-template-areas: ". north north ." "west talon talon east" "south south south south";
+  }
+
+  &__talon {
+    grid-area: talon;
+    align-self: center;
+    margin: 0 auto;
+    max-width: 100px; // Match a card width on the max hand width
+    width: 50%;
+    padding: 1rem;
+    box-sizing: content-box;
+  }
+
+  &__player {
+    align-self: center;
+
+    &--0 {
+      grid-area: south;
+    }
+
+    &--1 {
+      grid-area: west;
+    }
+
+    &--2 {
+      grid-area: north;
+    }
+
+    &--3 {
+      grid-area: east;
+    }
+  }
+}

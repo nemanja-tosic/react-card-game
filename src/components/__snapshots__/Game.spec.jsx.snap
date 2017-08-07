@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game should render correctly 1`] = `
+<div
+  className="Game"
+>
+  <div
+    className="Game__talon"
+  >
+    <Talon
+      cardRef={[Function]}
+      cards={
+        Array [
+          Array [
+            Card {
+              "code": "JS",
+              "imageUrl": "https://deckofcardsapi.com/static/img/JS.png",
+            },
+          ],
+        ]
+      }
+    />
+  </div>
+  <div
+    className="Game__player Game__player--0"
+  >
+    <PlayerComponent
+      cardRef={[Function]}
+      onCardClicked={[Function]}
+      player={
+        Player {
+          "cards": Array [
+            Card {
+              "code": "0C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+            },
+            Card {
+              "code": "2C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+            },
+            Card {
+              "code": "3C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+            },
+            Card {
+              "code": "4C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+            },
+            Card {
+              "code": "5C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+            },
+          ],
+          "id": 1,
+          "isActive": true,
+          "isUserControlled": true,
+          "name": "Player",
+          "score": 0,
+          "takenCards": Array [],
+        }
+      }
+      slot={0}
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,28 @@
+@import './variables';
+
+.Talon {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__card {
+    width: 100%;
+    position: absolute;
+  }
+
+  &__card:nth-child(1) {
+    margin-top: 40%;
+  }
+
+  &__card:nth-child(2) {
+    margin-left: -40%;
+  }
+
+  &__card:nth-child(3) {
+    margin-top: -40%;
+  }
+
+  &__card:nth-child(4) {
+    margin-left: 40%;
+  }
+}

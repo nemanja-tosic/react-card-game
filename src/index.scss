@@ -1,0 +1,15 @@
+@import './components/variables';
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #00A000;
+  color: white;
+}

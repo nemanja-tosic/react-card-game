@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should show a form with entries for the player name and the number of opponents 1`] = `
+<div
+  className="Menu container-fluid"
+>
+  <div
+    className="row justify-content-center align-items-center"
+  >
+    <form
+      className="col-sm-6"
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group Menu__name"
+      >
+        <input
+          className="form-control"
+          maxLength="20"
+          onChange={[Function]}
+          pattern="\\\\S.*"
+          placeholder="Your name"
+          required={true}
+        />
+      </div>
+      <div
+        className="form-group Menu__number-of-opponents"
+      >
+        <select
+          className="form-control"
+          onChange={[Function]}
+        >
+          <option
+            value={1}
+          >
+            1
+          </option>
+          <option
+            value={2}
+          >
+            2
+          </option>
+          <option
+            value={3}
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <div
+        className="form-group"
+      >
+        <button
+          className="btn btn-primary"
+          type="submit"
+        >
+          Start game
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

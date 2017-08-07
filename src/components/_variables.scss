@@ -1,0 +1,19 @@
+$red: #E00101;
+$brand-primary: $red;
+@import '../../node_modules/bootstrap/scss/variables';
+
+$card-portrait-ratio: 0.71;
+
+// 10 cards per player = max 10 won rounds
+$max-won-rounds: 10;
+
+// When to switch to the compact view - opponents cards not visible.
+$compact-view-breakpoint: 'md';
+
+@function card-width($height) {
+  @return $height * $card-portrait-ratio;
+}
+
+@function card-height($width) {
+  @return $width / ( 1 / $card-portrait-ratio);
+}

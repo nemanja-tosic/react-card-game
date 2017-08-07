@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppContainer when the game has not started should show the menu 1`] = `
+<App
+  game={
+    Game {
+      "players": Array [
+        Player {
+          "cards": Array [
+            Card {
+              "code": "0C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+            },
+            Card {
+              "code": "2C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+            },
+            Card {
+              "code": "3C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+            },
+            Card {
+              "code": "4C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+            },
+            Card {
+              "code": "5C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+            },
+          ],
+          "id": 1,
+          "isActive": true,
+          "isUserControlled": true,
+          "name": "Player",
+          "score": 0,
+          "takenCards": Array [],
+        },
+      ],
+      "state": "notStarted",
+      "talon": Array [
+        Array [
+          Card {
+            "code": "JS",
+            "imageUrl": "https://deckofcardsapi.com/static/img/JS.png",
+          },
+        ],
+      ],
+      "winners": Array [],
+    }
+  }
+  handleCardClicked={[Function]}
+  handleNewGame={[Function]}
+  handleStartGame={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "notify": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": null,
+    }
+  }
+/>
+`;
+
+exports[`AppContainer when the game is inProgress should show the game 1`] = `
+<App
+  game={
+    Game {
+      "players": Array [
+        Player {
+          "cards": Array [
+            Card {
+              "code": "0C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+            },
+            Card {
+              "code": "2C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+            },
+            Card {
+              "code": "3C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+            },
+            Card {
+              "code": "4C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+            },
+            Card {
+              "code": "5C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+            },
+          ],
+          "id": 1,
+          "isActive": true,
+          "isUserControlled": true,
+          "name": "Player",
+          "score": 0,
+          "takenCards": Array [],
+        },
+      ],
+      "state": "inProgress",
+      "talon": Array [
+        Array [
+          Card {
+            "code": "JS",
+            "imageUrl": "https://deckofcardsapi.com/static/img/JS.png",
+          },
+        ],
+      ],
+      "winners": Array [],
+    }
+  }
+  handleCardClicked={[Function]}
+  handleNewGame={[Function]}
+  handleStartGame={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "notify": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": null,
+    }
+  }
+/>
+`;
+
+exports[`AppContainer when the game is loading should show the loading screen 1`] = `
+<App
+  game={
+    Game {
+      "players": Array [
+        Player {
+          "cards": Array [
+            Card {
+              "code": "0C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+            },
+            Card {
+              "code": "2C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+            },
+            Card {
+              "code": "3C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+            },
+            Card {
+              "code": "4C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+            },
+            Card {
+              "code": "5C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+            },
+          ],
+          "id": 1,
+          "isActive": true,
+          "isUserControlled": true,
+          "name": "Player",
+          "score": 0,
+          "takenCards": Array [],
+        },
+      ],
+      "state": "loading",
+      "talon": Array [
+        Array [
+          Card {
+            "code": "JS",
+            "imageUrl": "https://deckofcardsapi.com/static/img/JS.png",
+          },
+        ],
+      ],
+      "winners": Array [],
+    }
+  }
+  handleCardClicked={[Function]}
+  handleNewGame={[Function]}
+  handleStartGame={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "notify": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": null,
+    }
+  }
+/>
+`;
+
+exports[`AppContainer when the game is over should show the scoreboard 1`] = `
+<App
+  game={
+    Game {
+      "players": Array [
+        Player {
+          "cards": Array [
+            Card {
+              "code": "0C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/0C.png",
+            },
+            Card {
+              "code": "2C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/2C.png",
+            },
+            Card {
+              "code": "3C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/3C.png",
+            },
+            Card {
+              "code": "4C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/4C.png",
+            },
+            Card {
+              "code": "5C",
+              "imageUrl": "https://deckofcardsapi.com/static/img/5C.png",
+            },
+          ],
+          "id": 1,
+          "isActive": true,
+          "isUserControlled": true,
+          "name": "Player",
+          "score": 0,
+          "takenCards": Array [],
+        },
+      ],
+      "state": "over",
+      "talon": Array [
+        Array [
+          Card {
+            "code": "JS",
+            "imageUrl": "https://deckofcardsapi.com/static/img/JS.png",
+          },
+        ],
+      ],
+      "winners": Array [],
+    }
+  }
+  handleCardClicked={[Function]}
+  handleNewGame={[Function]}
+  handleStartGame={[Function]}
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "notify": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": null,
+    }
+  }
+/>
+`;
